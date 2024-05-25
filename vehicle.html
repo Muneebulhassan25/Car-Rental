@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="allstyle.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="shortcut icon" href="Assets/Favicon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- ---------JQuery--------- -->
+    <script src="Plugins/jquery.min.js"></script>
+    <!-- ----------JQuery Scrollup Plugin------------- -->
+    <script src="Plugins/jquery.scrollUp.min.js"></script>
+    <title>Car Rental</title>
+</head>
+<body>
+    <div id="main">
+      <div id="hero-page">
+        <div class="overlay">
+            <nav>
+                <img src="Assets/logo.png" alt="" />
+                <div class="nav-links" id="sidemenu">
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="vehicle.html">Vechicle Models</a>
+                  <a href="testimonials.html">Testimonials</a>
+                  <a href="team.html">Our Team</a>
+                  <a href="contact.html">Contact</a>
+                  <i class="ri-close-large-line" onclick="closemenu()"></i>
+                </div>
+                <i class="ri-menu-line" onclick="openmenu()"></i>
+                <div class="nav-btn">
+                  <button class="btn-hover">Sign In</button>
+                  <button class="register-btn">Register</button>
+                </div>
+              </nav>
+              <div class="hero-text">
+                <h3>
+                  Vehicle Models</h3>
+                <p>Home <span>/</span> 
+                  Vehicle Models</p>
+              </div>
+        </div>
+    </div>
+    <!-- ---------------Model Section---------------- -->
+   <div id="vehicle-page">
+    <div class="vehicle-container">
+        <div class="models-div">
+            <div class="models-div-box">
+                <img src="Assets/Modelimage1.png" alt="">
+                <div class="models-div-box-desciption">
+                  <div class="name-price">
+                    <div class="name-div">
+                      <h4>Audi A1</h4>
+                      <span>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                        <i class="ri-star-line"></i>
+                      </span>
+                    </div>
+                    <div class="price-div">
+                      <h4>$45</h4>
+                      <p>per day</p>
+                    </div>
+                  </div>
+                  <div class="model-details">
+                    <div>
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                        Audi
+                      </span>
+                      <span>
+                        4/5
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                      </span>
+                    </div>
+                    <div>
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                        Manual
+                      </span>
+                      <span>
+                        Diesel
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                      </span>
+                    </div>
+                  </div>
+                  <button>Book Ride</button>
+                </div>
+            </div>
+            <div class="models-div-box">
+              <img src="Assets/Modelimage2.png" alt="">
+              <div class="models-div-box-desciption">
+                <div class="name-price">
+                  <div class="name-div">
+                    <h4>Golf 6</h4>
+                    <span>
+                      <i class="ri-star-line"></i>
+                      <i class="ri-star-line"></i>
+                      <i class="ri-star-line"></i>
+                      <i class="ri-star-line"></i>
+                      <i class="ri-star-line"></i>
+                    </span>
+                  </div>
+                  <div class="price-div">
+                    <h4>$37</h4>
+                    <p>per day</p>
+                  </div>
+                </div>
+                <div class="model-details">
+                  <div>
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                      VW
+                    </span>
+                    <span>
+                      4/5
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                    </span>
+                  </div>
+                  <div>
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                      Manual
+                    </span>
+                    <span>
+                      Diesel
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                    </span>
+                  </div>
+                </div>
+                <button>Book Ride</button>
+              </div>
+          </div>
+            <div class="models-div-box">
+              <img src="Assets/Modelimage3.png" alt="">
+              <div class="models-div-box-desciption">
+                <div class="name-price">
+                  <div class="name-div">
+                    <h4>Toyota</h4>
+                    <span>
+                      <i class="ri-star-line"></i>
+                      <i class="ri-star-line"></i>
+                      <i class="ri-star-line"></i>
+                      <i class="ri-star-line"></i>
+                      <i class="ri-star-line"></i>
+                    </span>
+                  </div>
+                  <div class="price-div">
+                    <h4>$30</h4>
+                    <p>per day</p>
+                  </div>
+                </div>
+                <div class="model-details">
+                  <div>
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                      Camry
+                    </span>
+                    <span>
+                      4/5
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                    </span>
+                  </div>
+                  <div>
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                      Manual
+                    </span>
+                    <span>
+                      Diesel
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                    </span>
+                  </div>
+                </div>
+                <button>Book Ride</button>
+              </div>
+          </div>
+          <div class="models-div-box">
+            <img src="Assets/Modelimage4.png" alt="">
+            <div class="models-div-box-desciption">
+              <div class="name-price">
+                <div class="name-div">
+                  <h4>BMW 320</h4>
+                  <span>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </span>
+                </div>
+                <div class="price-div">
+                  <h4>$35</h4>
+                  <p>per day</p>
+                </div>
+              </div>
+              <div class="model-details">
+                <div>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                    ModernLine
+                  </span>
+                  <span>
+                    4/5
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                    Manual
+                  </span>
+                  <span>
+                    Diesel
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                  </span>
+                </div>
+              </div>
+              <button>Book Ride</button>
+            </div>
+        </div>
+          <div class="models-div-box">
+            <img src="Assets/Modelimage5.png" alt="">
+            <div class="models-div-box-desciption">
+              <div class="name-price">
+                <div class="name-div">
+                  <h4>Mercedes</h4>
+                  <span>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </span>
+                </div>
+                <div class="price-div">
+                  <h4>$50</h4>
+                  <p>per day</p>
+                </div>
+              </div>
+              <div class="model-details">
+                <div>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                    Benz GLK
+                  </span>
+                  <span>
+                    4/5
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                    Manual
+                  </span>
+                  <span>
+                    Diesel
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                  </span>
+                </div>
+              </div>
+              <button>Book Ride</button>
+            </div>
+        </div>
+        <div class="models-div-box">
+          <img src="Assets/Modelimage6.png" alt="">
+          <div class="models-div-box-desciption">
+            <div class="name-price">
+              <div class="name-div">
+                <h4>VW Passat</h4>
+                <span>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                  <i class="ri-star-line"></i>
+                </span>
+              </div>
+              <div class="price-div">
+                <h4>$25</h4>
+                <p>per day</p>
+              </div>
+            </div>
+            <div class="model-details">
+              <div>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                  CC
+                </span>
+                <span>
+                  4/5
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                </span>
+              </div>
+              <div>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                  Manual
+                </span>
+                <span>
+                  Diesel
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-car"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path></svg>
+                </span>
+              </div>
+            </div>
+            <button>Book Ride</button>
+          </div>
+      </div>
+
+        </div>
+    </div>
+   </div>
+    <!-- ----------------About Banner Section--------------- -->
+    <div id="banner-section">
+      <div class="banner-overlay">
+        <div class="banner-text">
+          <h2>Book a car by getting in touch with us</h2>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-phone"><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path></svg>
+            <h3>(123) 456-7869</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- -------------Footer Section----------------- -->
+     <footer>
+      <div class="footer-container">
+        <div class="footer-content-box">
+          <div class="f-content footer-content-1">
+            <h3>CAR <span>Rental</span></h3>
+            <p>
+              We offers a big range of vehicles for all your driving needs. We
+              have the perfect car to meet your needs.
+            </p>
+            <a href="#"><i class="ri-phone-fill"></i> [123]-456-789</a>
+            <a href="#"><i class="ri-mail-line"></i> carrental@gmail.com</a>
+          </div>
+          <div class="f-content footer-content-2">
+            <h3>COMPANY</h3>
+            <a href="#">New York</a>
+            <a href="#">Careers</a>
+            <a href="#">Mobile</a>
+            <a href="#">Blog</a>
+            <a href="#">How we work</a>
+          </div>
+        </div>
+        <div class="footer-content-box">
+          <div class="f-content footer-content-3">
+            <h3>WORKING HOURS</h3>
+            <ul>
+              <li>Mon - Fri: 9:00AM - 9:00PM</li>
+              <li>Sat: 9:00AM - 19:00PM</li>
+              <li>Sun: Closed</li>
+            </ul>
+          </div>
+          <div class="f-content footer-content-4">
+            <h3>SUBSCRIPTION</h3>
+            <p>Subscribe your Email address for latest news & updates.</p>
+            <input type="text" placeholder="Enter Email Address" />
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+    <!-- -------------------End----------------------------- -->
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="shortcut icon" href="Assets/Favicon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Car Rental</title>
+    <!-- ---------JQuery--------- -->
+    <script src="Plugins/jquery.min.js"></script>
+    <!-- ----------JQuery Scrollup Plugin------------- -->
+    <script src="Plugins/jquery.scrollUp.min.js"></script>
+  </head>
+
+  <body>
+    <div id="main">
+      <div id="header">
+        <div id="bg-img">
+          <img src="Assets/Car background.png" alt="" />
+        </div>
+
+        <nav>
+          <img src="Assets/logo.png" alt="" />
+          <div class="nav-links" id="sidemenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="vehicle.html">Vechicle Models</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="team.html">Our Team</a>
+            <a href="contact.html">Contact</a>
+            <i class="ri-close-large-line" onclick="closemenu()"></i>
+          </div>
+          <i class="ri-menu-line" onclick="openmenu()"></i>
+          <div class="nav-btn">
+            <button class="btn-hover">Sign In</button>
+            <button class="register-btn">Register</button>
+          </div>
+        </nav>
+        <div class="header-text">
+          <h4>Plan your trip now</h4>
+          <h1>Save <span>big</span> with our car rental</h1>
+          <p>
+            Rent the car of your dreams. Unbeatable prices, unlimited miles,
+            flexible pick-up options and much more.
+          </p>
+          <div class="header-btn">
+            <button class="btn btn-1">
+              Book Ride <i class="ri-checkbox-circle-line"></i>
+            </button>
+            <button class="btn btn-2">
+              Learn More <i class="ri-arrow-right-s-line"></i>
+            </button>
+          </div>
+        </div>
+        <!-- ------------Booking-Form------------- -->
+        <div class="container">
+          <div class="booking-form">
+            <h2>Book a car</h2>
+            <div class="form-box">
+              <div>
+                <label for=""
+                  ><i class="ri-roadster-fill"></i> Select Your Car Type<span
+                    >*</span
+                  ></label
+                >
+                <select>
+                  <option value="Audi">Select your car type</option>
+                  <option value="Audi">Audi AS1-Line</option>
+                  <option value="Audi">VW Golf 6</option>
+                  <option value="Audi">Toyota Camry</option>
+                  <option value="Audi">BMW 320 ModernLine</option>
+                  <option value="Audi">Mercedes-Benz GLK</option>
+                  <option value="Audi">VW Passat CC</option>
+                </select>
+              </div>
+              <div>
+                <label for=""
+                  ><i class="ri-map-pin-2-fill"></i> Pick-up<span
+                    >*</span
+                  ></label
+                >
+                <select>
+                  <option value="Audi">Select pick up location</option>
+                  <option value="Audi">Belgrade</option>
+                  <option value="Audi">Novi Sad</option>
+                  <option value="Audi">Nis</option>
+                  <option value="Audi">Kragujevac</option>
+                  <option value="Audi">Subotica</option>
+                </select>
+              </div>
+              <div>
+                <label for=""
+                  ><i class="ri-map-pin-2-fill"></i> Drop-of<span
+                    >*</span
+                  ></label
+                >
+                <select>
+                  <option value="Audi">Select drop off location</option>
+                  <option value="Audi">Novi Sad</option>
+                  <option value="Audi">Belgrade</option>
+                  <option value="Audi">Nis</option>
+                  <option value="Audi">Kragujevac</option>
+                  <option value="Audi">Subotica</option>
+                </select>
+              </div>
+              <div>
+                <label for=""
+                  ><i class="ri-calendar-event-line"></i> Pick-up<span
+                    >*</span
+                  ></label
+                >
+                <input type="date" placeholder="dd/mm/yyyy" />
+              </div>
+              <div>
+                <label for=""
+                  ><i class="ri-calendar-event-line"></i> Drop-of<span
+                    >*</span
+                  ></label
+                >
+                <input type="date" placeholder="dd/mm/yyyy" />
+              </div>
+              <div class="form-btn">
+                <button class="search-btn">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---------------Trip Plan---------------- -->
+      <div id="plan-section">
+        <div class="plan-container">
+          <div class="plan-text">
+            <h3>Plan your trip now</h3>
+            <h1>Quick & easy car rental</h1>
+          </div>
+          <div class="plan-box">
+            <div class="inner-box">
+              <img src="Assets/P1.png" alt="" />
+              <h3>Select Car</h3>
+              <p>
+                We offers a big range of vehicles for all your driving needs. We
+                have the perfect car to meet your needs
+              </p>
+            </div>
+            <div class="inner-box">
+              <img src="Assets/P2.png" alt="" />
+              <h3>Contact Operator</h3>
+              <p>
+                Our knowledgeable and friendly operators are always ready to
+                help with any questions or concerns
+              </p>
+            </div>
+            <div class="inner-box">
+              <img src="Assets/P3.png" alt="" />
+              <h3>Let's Drive</h3>
+              <p>
+                Whether you're hitting the open road, we've got you covered with
+                our wide range of cars
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --------------Select Car----------------- -->
+      <div id="pick-section">
+        <div class="pick-container">
+          <div class="pick-title">
+            <h3>Vehicle Models</h3>
+            <h1>Our rental fleet</h1>
+            <p>
+              Choose from a variety of our amazing vehicles to rent for your
+              next adventure or business trip
+            </p>
+          </div>
+          <div class="car-content">
+            <div class="pick-box">
+              <button id="btn1" onclick="item1()">Audi A1 S-Line</button>
+              <button id="btn2" onclick="item2()">VW Golf 6</button>
+              <button id="btn3" onclick="item3()">Toyota Camry</button>
+              <button id="btn4" onclick="item4()">BMW 320 ModernLine</button>
+              <button id="btn5" onclick="item5()">Mercedes-Benz GLK</button>
+              <button id="btn6" onclick="item6()">VW Passat CC</button>
+            </div>
+            <div class="car-box">
+              <img src="Assets/car1.jpg" alt="" id="car-img" />
+              <div class="pick-description">
+                <div class="pick-price"><span>$45 /</span> rent per day</div>
+                <div class="pick-table">
+                  <span id="model">Model</span>
+                  <span id="name">Audi</span>
+                </div>
+                <div class="pick-table">
+                  <span id="mark">Mark</span>
+                  <span id="markNo">A1</span>
+                </div>
+                <div class="pick-table">
+                  <span id="year">Year</span>
+                  <span id="yearNo">2021</span>
+                </div>
+                <div class="pick-table">
+                  <span id="door">Doors</span>
+                  <span id="doorNo">4/5</span>
+                </div>
+                <div class="pick-table">
+                  <span id="ac">AC</span>
+                  <span id="acYes">Yes</span>
+                </div>
+                <div class="pick-table">
+                  <span id="tran">Transmission</span>
+                  <span id="tranManual">Manual</span>
+                </div>
+                <div class="pick-table">
+                  <span id="fuel">Fuel</span>
+                  <span id="fuelDis">Gasoline</span>
+                </div>
+                <a href="#" class="car-btn">RESERVE NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------Offer Section-------- -->
+      <div id="offer-section">
+        <h1>Save big with our cheap car rental!</h1>
+        <h3>Top Airports. Local Suppliers. <span>24/7</span> Support.</h3>
+      </div>
+      <!-- ---------------Choose Section----------- -->
+      <div id="choose-section">
+        <div class="choose-container">
+          <img src="Assets/Threecars.png" alt="" />
+          <div class="choose-text">
+            <div class="choose-text-left">
+              <h4>Why Choose Us</h4>
+              <h1>Best valued deals you will ever find</h1>
+              <p>
+                Discover the best deals you'll ever find with our unbeatable
+                offers. We're dedicated to providing you with the best value for
+                your money, so you can enjoy top-quality services and products
+                without breaking the bank. Our deals are designed to give you
+                the ultimate renting experience, so don't miss out on your
+                chance to save big.
+              </p>
+              <a href="">Find Details <i class="ri-arrow-right-s-line"></i></a>
+            </div>
+            <div class="choose-text-right">
+              <div class="choose-text-right-box">
+                <img src="Assets/C1.png" alt="" />
+                <div class="right-text-box">
+                  <h3>Cross Country Drive</h3>
+                  <p>
+                    Take your driving experience to the next level with our
+                    top-notch vehicles for your cross-country adventures.
+                  </p>
+                </div>
+              </div>
+              <div class="choose-text-right-box">
+                <img src="Assets/C2.png" alt="" />
+                <div class="right-text-box">
+                  <h3>All Inclusive Pricing</h3>
+                  <p>
+                    Get everything you need in one convenient, transparent price
+                    with our all-inclusive pricing policy.
+                  </p>
+                </div>
+              </div>
+              <div class="choose-text-right-box">
+                <img src="Assets/C3.png" alt="" />
+                <div class="right-text-box">
+                  <h3>No Hidden Charges</h3>
+                  <p>
+                    Enjoy peace of mind with our no hidden charges policy. We
+                    believe in transparent and honest pricing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------Testimonials section---------- -->
+      <div id="testimonial-section">
+        <div class="testimonial-container">
+          <div class="testimonial-content">
+            <div class="testimonial-text">
+              <h4>Reviewed by People</h4>
+              <h2>Client's Testimonials</h2>
+              <p>
+                Discover the positive impact we've made on the our clients by
+                reading through their testimonials. Our clients have experienced
+                our service and results, and they're eager to share their
+                positive experiences with you.
+              </p>
+            </div>
+            <div class="all-testimonial">
+              <div class="all-testimonial-box">
+                <p>
+                  "We rented a car from this website and had an amazing
+                  experience! The booking was easy and the rental rates were
+                  very affordable. "
+                </p>
+                <div class="testimonial-box-name">
+                  <div class="testimonial-box-name-profile">
+                    <img src="Assets/ProfileImg1.jpg" alt="" />
+                    <div>
+                      <h4>Parry Hotter</h4>
+                      <p>Belgrade</p>
+                    </div>
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-quote"
+                  >
+                    <path
+                      d="M10 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5"
+                    ></path>
+                    <path
+                      d="M19 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="all-testimonial-box">
+                <p>
+                  "The car was in great condition and made our trip even better.
+                  Highly recommend for this car rental website!"
+                </p>
+                <div class="testimonial-box-name">
+                  <div class="testimonial-box-name-profile">
+                    <img src="Assets/ProfileImg2.jpg" alt="" />
+                    <div>
+                      <h4>Ron Rizzly</h4>
+                      <p>Novi Sad</p>
+                    </div>
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-quote"
+                  >
+                    <path
+                      d="M10 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5"
+                    ></path>
+                    <path
+                      d="M19 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------FAQ section---------- -->
+      <div id="faq-section">
+        <div class="faq-container">
+          <div class="faq-title">
+            <h5>FAQ</h5>
+            <h2>Frequently Asked Questions</h2>
+            <p>
+              Frequently Asked Questions About the Car Rental Booking Process on
+              Our Website: Answers to Common Concerns and Inquiries.
+            </p>
+          </div>
+          <div class="faq-question-box">
+            <div class="faqs">
+              <div class="question">
+                <h3>1. What is special about comparing rental car deals?</h3>
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="answer">
+                <p>
+                  Comparing rental car deals is important as it helps find the
+                  best deal that fits your budget and requirements, ensuring you
+                  get the most value for your money. By comparing various
+                  options, you can find deals that offer lower prices,
+                  additional services, or better car models. You can find car
+                  rental deals by researching online and comparing prices from
+                  different rental companies.
+                </p>
+              </div>
+            </div>
+            <div class="faqs">
+              <div class="question">
+                <h3>2. How do I find the car rental deals?</h3>
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="answer">
+                <p>
+                  You can find car rental deals by researching online and
+                  comparing prices from different rental companies. Websites
+                  such as Expedia, Kayak, and Travelocity allow you to compare
+                  prices and view available rental options. It is also
+                  recommended to sign up for email newsletters and follow rental
+                  car companies on social media to be informed of any special
+                  deals or promotions.
+                </p>
+              </div>
+            </div>
+            <div class="faqs">
+              <div class="question">
+                <h3>3. How do I find such low rental car prices?</h3>
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <div class="answer">
+                <p>
+                  Book in advance: Booking your rental car ahead of time can
+                  often result in lower prices. Compare prices from multiple
+                  companies: Use websites like Kayak, Expedia, or Travelocity to
+                  compare prices from multiple rental car companies. Look for
+                  discount codes and coupons: Search for discount codes and
+                  coupons that you can use to lower the rental price. Renting
+                  from an off-airport location can sometimes result in lower
+                  prices.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------Download Section-------------- -->
+      <div id="download-section">
+        <div class="download-container">
+          <div class="download-text">
+            <h2>Download our app to get most out of it</h2>
+            <p>
+              Thrown shy denote ten ladies though ask saw. Or by to he going
+              think order event music. Incommode so intention defective at
+              convinced. Led income months itself and houses you.
+            </p>
+            <div class="download-btn">
+              <img src="Assets/googleplay.png" alt="" />
+              <img src="Assets/appstore.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -------------Footer Section----------------- -->
+      <footer>
+        <div class="footer-container">
+          <div class="footer-content-box">
+            <div class="f-content footer-content-1">
+              <h3>CAR <span>Rental</span></h3>
+              <p>
+                We offers a big range of vehicles for all your driving needs. We
+                have the perfect car to meet your needs.
+              </p>
+              <a href="#"><i class="ri-phone-fill"></i> [123]-456-789</a>
+              <a href="#"><i class="ri-mail-line"></i> carrental@gmail.com</a>
+            </div>
+            <div class="f-content footer-content-2">
+              <h3>COMPANY</h3>
+              <a href="#">New York</a>
+              <a href="#">Careers</a>
+              <a href="#">Mobile</a>
+              <a href="#">Blog</a>
+              <a href="#">How we work</a>
+            </div>
+          </div>
+          <div class="footer-content-box">
+            <div class="f-content footer-content-3">
+              <h3>WORKING HOURS</h3>
+              <ul>
+                <li>Mon - Fri: 9:00AM - 9:00PM</li>
+                <li>Sat: 9:00AM - 19:00PM</li>
+                <li>Sun: Closed</li>
+              </ul>
+            </div>
+            <div class="f-content footer-content-4">
+              <h3>SUBSCRIPTION</h3>
+              <p>Subscribe your Email address for latest news & updates.</p>
+              <input type="text" placeholder="Enter Email Address" />
+              <button type="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- --------------End-------------- -->
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
